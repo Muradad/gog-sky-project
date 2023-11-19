@@ -1,0 +1,78 @@
+@import url("../header-scss/header.css");
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --primary-blue: #2141b7;
+  --gray-color: #8b849b;
+  --border-color: rgba(128, 128, 128, 0.2);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: var(--primary-font);
+}
+
+// MAIN BTN CLASS
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 26px;
+  border-radius: 10px;
+  outline: 0;
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  }
+  .btn-primary {
+    background-color: var(--primary-blue);
+    color: white;
+    &:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    }
+  }
+  .btn-transparent {
+    color: var(--primary-blue);
+  }
+
+// MAIN STYLES
+.site-main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .travel-section{
+    background-image: url(/src/images/gogskysea.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px; 
+   
+  }
+}
+
+  // MAIN ADAPTIVE STYLES
+  @media screen and (max-width: 1000px) {
+  .btn {
+    padding: 8px 12px;
+
+  }
+  }
+  @media screen and (max-width: 850px) {
+
+  }
+
